@@ -42,8 +42,8 @@ jobs:
           cache: yarn
       - name: Node version
         run:  node -v
-      - name: yarn add --dev jest
-        run: 
+      - name: yarn add jest
+        run: yarn add --dev jest 
       - name: build
         run: yarn build
       - name: ts integration
